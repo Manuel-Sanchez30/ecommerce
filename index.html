@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <script src="src/main/index.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>ecommerce</title>
+</head>
+<body>
+
+    <div class="content__loading">
+        <div class="loading">
+            <img src="src/img/logo_academlo 5.png" alt="loading">
+        </div>
+    </div>
+
+    <header class="header">
+        <nav class="container">
+            <a class="logo" href="#home">
+                <img src="src/img/logo_academlo 5.png" alt="">                
+            </a>
+        
+            <ul class="menu">                
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <i class='bx bxs-sun iconTheme'></i>
+            </ul>         
+            
+            
+            <i class='bx bxs-dashboard iconMenu'></i>
+            
+            <i class='bx bx-cart' id="iconCart">
+                <span id="amountItems">1</span>
+            </i> 
+        </nav>
+    </header>
+
+    <section class="hero container" id="home">
+        <div class="hero__header">
+            <div></div>
+            <div class="hero__img">
+                <img src="src/img/img-Header.png" alt="">
+            </div>
+        </div>
+        <div class="hero__body">
+            <h2 class="hero__title">New Sweatshirt COLLECTIONS 2022</h2>
+            <p class="hero__paragraph">Latest arrival of the new Hanes Midweight Crewneck sweatshirt imported from the 2022 series, with a modern design.</p>
+            <p class="hero__price">$14.00</p>
+            <a href="#" class="hero__button">Show more</a>
+        </div>
+    </section>
+
+    <div class="content__filter container" id="products">
+
+        <div class="filter" data-filter="all">
+            <p>Show all</p>
+            <p>Show all products</p>
+        </div>
+        <div class="filter hover" data-filter=".shirt">
+            <p class="filter__tittle">Shirt</p>
+            <p class="filter__count__product">7 products</p>
+        </div>
+        <div class="filter hover" data-filter=".hoddie">
+            <p class="filter__tittle">Hoddie</p>
+            <p class="filter__count__product">6 products</p>
+        </div>
+        <div class="filter hover" data-filter=".sweater">
+            <p class="filter__tittle">Sweater</p>
+            <p class="filter__count__product">5 products</p>
+        </div>        
+        
+    </div>    
+        
+
+    <main class="container">
+        <section class="products"></section>
+    </main>
+
+    <div class="cart">
+        <div class="cart__products"></div>
+        <div class="cart__total">
+            
+            <div class="cart__total__info">
+                
+            </div>
+            <button id="btn__buy">comprar</button>
+        </div>
+        
+    </div>
+    <br><br><br>
+    <footer>
+        <div class="container__footer container ">
+            <div class="container_footer_title ">
+                <h3>Our information</h3>
+                <ul>
+                    <li><a href="#">Toluca - México</a></li>
+                </ul>
+            </div>
+            <div class="container_footer_title">
+                <h3>About Us</h3>
+                <ul id="class__enlace">
+                    <li><a href="#">Support Center</a></li>
+                    <li><a href="#">Customer Support</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Copy Right</a></li>                 
+                </ul>
+            </div>
+            <div class="container_footer_title">
+                <h3>Product</h3>
+                <ul>
+                    <li><a href="#">Hoodies</a> </li>
+                    <li><a href="#">Shirts</a> </li>
+                    <li><a href="#">About Us</a> </li>
+                    <li><a href="#">Sweatshirts</a> </li>                  
+                </ul>
+            </div>
+            <div class="container_footer_title">
+                <h3>Social</h3>
+                <ul class="footer__social">
+                    <li>
+                        <a href="https://www.facebook.com/academlo" target="_blank"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://www.youtube.com/@Academlo" target="_blank"><i class='bx bxl-youtube' ></i></a>                         
+                    </li>                    
+                </ul>
+            </div>
+            
+        </div>
+        <div class="autor container">
+            <p id="autor">
+                <b>Milton Manuel Sanchez Rios, milton.sanchezrios@gmail.com <a href="#">repositorio</a> </b>
+            </p>
+        </div>
+        
+    </footer>
+    
+
+</body>
+</html>
